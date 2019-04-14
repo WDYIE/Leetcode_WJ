@@ -24,6 +24,9 @@ class Solution2:
         return count
 
 dis = 0
+
+##该题为计数题,解法通过外层递归和内层循环遍历所有的数。bs 记录val各位已经出现过的数字。
+##比如:go（0*10+i,0|(1<<i)),这里的bs已经记录上i已经出现到val中了。
 class Solution4:
     def numDupDigitsAtMostN(self,N):
         n = N
